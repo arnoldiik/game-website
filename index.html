@@ -28,12 +28,18 @@
             justify-content: space-between;
             overflow: hidden;
         }
+        .balance-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
         .balance {
             display: flex;
             align-items: center;
             font-size: 48px;
             color: white;
-            margin-top: 20px;
         }
         .balance img {
             width: 50px;
@@ -55,9 +61,11 @@
 </head>
 <body>
     <div class="game-container">
-        <div class="balance">
-            <img src="coin.png" alt="Coin">
-            <span id="balance">0</span>
+        <div class="balance-container">
+            <div class="balance">
+                <img src="coin.png" alt="Coin">
+                <span id="balance">0</span>
+            </div>
         </div>
         <div class="character">
             <img src="character.png" alt="Character" id="character">
